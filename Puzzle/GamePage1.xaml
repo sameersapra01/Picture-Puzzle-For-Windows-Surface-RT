@@ -1,0 +1,96 @@
+﻿<Page
+    x:Name="pageRoot"
+    x:Class="Puzzle.GamePage1"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Puzzle"
+    xmlns:common="using:Puzzle.Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
+        <x:String x:Key="AppName">My Application</x:String>
+    </Page.Resources>
+
+
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="1"/>
+                <GradientStop Color="#FF0D253C" Offset="0.461"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Image Name="myImage" HorizontalAlignment="Left" Height="444" VerticalAlignment="Top" Width="590" RenderTransformOrigin="0.405,0.351" Margin="43,231,0,0" />
+
+
+        <Grid x:Name="myGrid" Margin="697,231,76,93">
+
+            <Image x:Name="image00" HorizontalAlignment="Left" Height="444" VerticalAlignment="Top"  Width="590" RenderTransformOrigin="0.405,0.351" Grid.ColumnSpan="4" Grid.RowSpan="4" Tapped="image00_Tapped"  />
+            <Image x:Name="image01" HorizontalAlignment="Left" Height="444" VerticalAlignment="Top" Width="590" RenderTransformOrigin="0.405,0.351" Grid.ColumnSpan="4" Grid.RowSpan="4" Tapped="image01_Tapped"  />
+            <Image x:Name="image02" HorizontalAlignment="Left" Height="444" VerticalAlignment="Top" Width="590" RenderTransformOrigin="0.405,0.351" Grid.ColumnSpan="4" Grid.RowSpan="4" Tapped="image02_Tapped"  />
+            <Image x:Name="image03" HorizontalAlignment="Left" Height="444" VerticalAlignment="Top" Width="590" RenderTransformOrigin="0.405,0.351" Grid.ColumnSpan="4" Grid.RowSpan="4" Tapped="image03_Tapped" />
+            <Image x:Name="image04" HorizontalAlignment="Left" Height="444" VerticalAlignment="Top" Width="590" RenderTransformOrigin="0.405,0.351" Grid.ColumnSpan="4" Grid.RowSpan="4" Tapped="image04_Tapped"  />
+            <Image x:Name="image05" HorizontalAlignment="Left" Height="444" VerticalAlignment="Top" Width="590" RenderTransformOrigin="0.405,0.351" Grid.ColumnSpan="4" Grid.RowSpan="4" Tapped="image05_Tapped"  />
+            <Image x:Name="image06" HorizontalAlignment="Left" Height="444" VerticalAlignment="Top" Width="590" RenderTransformOrigin="0.405,0.351" Grid.ColumnSpan="4" Grid.RowSpan="4" Tapped="image06_Tapped"  />
+            <Image x:Name="image07" HorizontalAlignment="Left" Height="444" VerticalAlignment="Top" Width="590" RenderTransformOrigin="0.405,0.351" Grid.ColumnSpan="4" Grid.RowSpan="4" Tapped="image07_Tapped"  />
+            <Image x:Name="image08" HorizontalAlignment="Left" Height="444" VerticalAlignment="Top" Width="590" RenderTransformOrigin="0.405,0.351" Grid.ColumnSpan="4" Grid.RowSpan="4" Tapped="image08_Tapped"  />
+            <Image x:Name="image09" HorizontalAlignment="Left" Height="444" VerticalAlignment="Top" Width="590" RenderTransformOrigin="0.405,0.351" Grid.ColumnSpan="4" Grid.RowSpan="4" Tapped="image09_Tapped"  />
+            <Image x:Name="image10" HorizontalAlignment="Left" Height="444" VerticalAlignment="Top" Width="590" RenderTransformOrigin="0.405,0.351" Grid.ColumnSpan="4" Grid.RowSpan="4" Tapped="image10_Tapped"  />
+            <Image x:Name="image11" HorizontalAlignment="Left" Height="444" VerticalAlignment="Top" Width="590" RenderTransformOrigin="0.405,0.351" Grid.ColumnSpan="4" Grid.RowSpan="4" Tapped="image11_Tapped"  />
+            <Image x:Name="image12" HorizontalAlignment="Left" Height="444" VerticalAlignment="Top" Width="590" RenderTransformOrigin="0.405,0.351" Grid.ColumnSpan="4" Grid.RowSpan="4" Tapped="image12_Tapped" />
+            <Image x:Name="image13" HorizontalAlignment="Left" Height="444" VerticalAlignment="Top" Width="590" RenderTransformOrigin="0.405,0.351" Grid.ColumnSpan="4" Grid.RowSpan="4" Tapped="image13_Tapped"  />
+            <Image x:Name="image14" HorizontalAlignment="Left" Height="444" VerticalAlignment="Top" Width="593" RenderTransformOrigin="0.405,0.351" Grid.ColumnSpan="4" Grid.RowSpan="4" Tapped="image14_Tapped"  />
+
+            <Border BorderBrush="red" BorderThickness="1" Grid.Column="1" Grid.Row="2"/>
+            <Border BorderBrush="Red" BorderThickness="1" HorizontalAlignment="Left" Height="111" VerticalAlignment="Top" Width="148"/>
+            <Border BorderBrush="red" BorderThickness="1" Grid.Column="1"/>
+            <Border BorderBrush="red" BorderThickness="1" Grid.Column="2" Margin="0,0,1,0"/>
+            <Border BorderBrush="red" BorderThickness="1" Grid.Column="2" Grid.ColumnSpan="2" Margin="148,0,1,0"/>
+            <Border BorderBrush="red" BorderThickness="1" Grid.Row="1"/>
+            <Border BorderBrush="red" BorderThickness="1" Grid.Column="1" Grid.Row="1"/>
+            <Border BorderBrush="red" BorderThickness="1" Grid.Column="2" Margin="0,0,1,0" Grid.Row="1"/>
+            <Border BorderBrush="red" BorderThickness="1" Grid.Column="2" Grid.ColumnSpan="2" Margin="148,0,1,0" Grid.Row="1"/>
+            <Border BorderBrush="red" BorderThickness="1" Grid.Row="3"/>
+            <Border BorderBrush="red" BorderThickness="1" Grid.Column="1" Grid.Row="3"/>
+            <Border BorderBrush="red" BorderThickness="1" Margin="0,0,1,0" Grid.Column="2" Grid.Row="3"/>
+            <Border BorderBrush="red" BorderThickness="1" Margin="148,0,1,0" Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="2"/>
+            <Border BorderBrush="red" BorderThickness="3" Margin="0,0,1,0" Grid.RowSpan="4" Grid.ColumnSpan="4"/>
+            <Border BorderBrush="red" BorderThickness="1" Grid.Row="2"/>
+            <Border BorderBrush="red" BorderThickness="1" Grid.Row="2" Grid.Column="1"/>
+            <Border BorderBrush="red" BorderThickness="1" Margin="148,0,1,0" Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2"/>
+            <Border BorderBrush="red" BorderThickness="1" Grid.Column="2" Margin="0,0,1,0" Grid.Row="2"/>
+
+
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition Width="148" />
+                <ColumnDefinition Width="148*" />
+                <ColumnDefinition Width="148*" />
+                <ColumnDefinition Width="148*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="111" />
+                <RowDefinition Height="111" />
+                <RowDefinition Height="111" />
+                <RowDefinition Height="111" />
+            </Grid.RowDefinitions>
+
+
+        </Grid>
+
+        <Button x:Name="captureImage" Content="Capture Image" HorizontalAlignment="Left" Margin="1038,95,0,0" VerticalAlignment="Top" Height="50" Width="163" Click="captureImage_Click"/>
+        <Button x:Name="choosePicture" Content="Choose Picture" HorizontalAlignment="Left" Margin="604,95,0,0" VerticalAlignment="Top" Height="50" Width="163" Click="choosePicture_Click"/>
+        <Button x:Name="playButton" Content="Play" HorizontalAlignment="Left" Margin="197,95,0,0" VerticalAlignment="Top" Height="50" Width="163" Click="playButton_Click" />
+        <TextBlock x:Name="winMessage" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="200,368,0,0" Height="46" Width="230" FontSize="36" Visibility="Collapsed" Text="You won!!!"/>
+        <Button x:Name="playAgainButton" Content="Play Again" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="220,512,0,0" Width="134" Height="50" Visibility="Collapsed" Click="playAgainButton_Click"/>
+    </Grid>
+
+
+
+</Page>
